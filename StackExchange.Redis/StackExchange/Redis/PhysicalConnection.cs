@@ -779,7 +779,7 @@ namespace StackExchange.Redis
                         );
                     try
                     {
-                        ssl.AuthenticateAsClient(host);
+                        ssl.AuthenticateAsClientAsync(host).GetAwaiter().GetResult();
                     }
                     catch (AuthenticationException)
                     {

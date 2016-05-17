@@ -1,6 +1,7 @@
 #if NUNITLITE
 using System;
 using System.Reflection;
+using NUnit.Common;
 using NUnitLite;
 
 namespace StackExchange.Redis.Tests
@@ -9,7 +10,8 @@ namespace StackExchange.Redis.Tests
     {
         public int Main(string[] args)
         {
-            return new AutoRun().Execute(typeof(TestBase).GetTypeInfo().Assembly, Console.Out, Console.In, args);
+            var writer = new ExtendedTextWrapper(Console.Out);
+            return new AutoRun(typeof(TestBase).GetTypeInfo().Assembly).Execute(args, writer, Console.In);
         }
     }
 }
