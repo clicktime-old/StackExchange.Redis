@@ -4,6 +4,7 @@
     "tags": [ "Async", "Redis", "Cache", "PubSub", "Messaging" ],
     "owners": [ "marc.gravell" ],
     "releaseNotes": "Alpha for .NET Core; if you aren't doing .NET Core, you probably don't want this",
+    "requireLicenseAcceptance": false,
     "projectUrl": "https://github.com/StackExchange/StackExchange.Redis",
     "licenseUrl": "https://raw.github.com/StackExchange/StackExchange.Redis/master/LICENSE",
     "repository": {
@@ -15,7 +16,6 @@
   "description": "High performance Redis client, incorporating both synchronous and asynchronous usage.",
   "authors": [ "Stack Exchange inc., marc.gravell" ],
   "copyright": "Stack Exchange inc. 2014-",
-  "requireLicenseAcceptance": false,
   "dependencies": {
   },
   "buildOptions": {
@@ -25,6 +25,9 @@
     "compile": {
       "include": [
         "../StackExchange.Redis/**/*.cs"
+      ],
+      "exclude": [
+        "../StackExchange.Redis/obj/"
       ]
     }
   },
