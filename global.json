@@ -1,5 +1,5 @@
 {
   "sdk": {
-  },
-  "projects": [ "StackExchange.Redis_dnxcore50" ]
+    "version": "1.0.0-preview1-002702"
+  }
 }
