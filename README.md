@@ -1,7 +1,7 @@
 Note (2020/09/09) - 
 
 If I (aliu@clicktime.com) remember it correctly, with this forked StackExchange.Redis repo, we forked it to fixed an issue that had since been merged and fixed for good. So the only reason we want to keep it to keep track of what that issues were.  
-This literally is what we fixed https://github.com/clicktime-old/StackExchange.Redis/commit/9ed9f2facc70e507d0ae2893c420b05c97245903
+This was what we fixed https://github.com/clicktime-old/StackExchange.Redis/commit/9ed9f2facc70e507d0ae2893c420b05c97245903
 
 
 StackExchange.Redis
